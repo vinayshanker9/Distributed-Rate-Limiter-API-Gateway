@@ -5,3 +5,5 @@ spring:
 rate-limiting:
   capacity: 10
   refill-rate: 1
+
+# Redis connection logger active
