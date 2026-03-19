@@ -213,3 +213,7 @@ jmeter -n -t jmeter/rate_limiter_load_test.jmx -l results.jtl -e -o dashboard/
 * **Successful Requests**: Maximum of 10 requests allowed instantly in the initial burst.
 * **Throttled Requests**: Subsequent rapid requests correctly throttled to `429 Too Many Requests`.
 * **Sustained rate**: Exactly 2 successful requests allowed per second under sustained load, verifying mathematical correctness of the Token Bucket implementation.
+
+
+## Lua Script Atomicity
+Redis execution is single-threaded. By running token calculations inside a Lua script, we ensure the read-and-decrement step happens atomically without distributed locks.
