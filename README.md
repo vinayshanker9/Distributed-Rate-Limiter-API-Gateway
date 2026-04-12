@@ -221,3 +221,7 @@ Redis execution is single-threaded. By running token calculations inside a Lua s
 
 ## Performance Load Benchmarks
 Load tested using Apache JMeter. Results show 10,000+ concurrent connections handled with sub-millisecond refill processing overhead.
+
+
+### Application properties
+Capacity details are mapped in resources/application.yml.
