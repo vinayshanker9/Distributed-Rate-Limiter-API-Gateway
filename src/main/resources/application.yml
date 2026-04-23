@@ -1,20 +1,7 @@
-server:
-  port: 8080
-
 spring:
-  application:
-    name: distributed-rate-limiter
-  data:
-    redis:
-      host: ${REDIS_HOST:localhost}
-      port: ${REDIS_PORT:6379}
-      timeout: 2000ms
-
-# Custom configuration for rate limiting
-app:
-  rate-limiter:
-    enabled: true
-    default-capacity: 10
-    default-refill-rate: 2.0       # 2 tokens refilled per second
-    header-api-key: X-API-Key      # Header name to check for client identifier
-    exclude-paths: /api/v1/unlimited,/actuator/health
+  redis:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+rate-limiting:
+  capacity: 10
+  refill-rate: 1
