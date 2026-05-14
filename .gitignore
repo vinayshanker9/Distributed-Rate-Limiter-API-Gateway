@@ -1,21 +1,4 @@
-# Maven build output
 target/
-
-# IDE configurations
 .idea/
-*.iml
-.classpath
-.project
-.settings/
-.vscode/
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-
-# JMeter execution outputs
-*.jtl
-dashboard/
-
-# Log files
-*.log
+*.class
+.env
