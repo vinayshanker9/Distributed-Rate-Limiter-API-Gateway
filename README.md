@@ -225,3 +225,7 @@ Load tested using Apache JMeter. Results show 10,000+ concurrent connections han
 
 ### Application properties
 Capacity details are mapped in resources/application.yml.
+
+
+### Redis Outage Fallback
+Outages activate local fallback token buckets.
