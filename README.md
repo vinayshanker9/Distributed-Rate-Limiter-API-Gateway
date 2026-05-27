@@ -4,6 +4,10 @@ A high-performance, distributed, and atomic API Gateway engineered to handle mil
 
 Built with a fully non-blocking **Spring WebFlux** reactive stack and a high-availability **Redis** cluster managing state atomically via custom **Lua scripts**.
 
+## 🚀 Live Deployment
+
+- **API Gateway Endpoint**: [https://distributed-rate-limiter-api-gateway-production.up.railway.app](https://distributed-rate-limiter-api-gateway-production.up.railway.app)
+
 ---
 
 ## 🚀 Key Features
