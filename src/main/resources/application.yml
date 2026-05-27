@@ -3,7 +3,7 @@ spring:
     host: ${REDIS_HOST:localhost}
     port: ${REDIS_PORT:6379}
 rate-limiting:
-  capacity: 10
-  refill-rate: 1
+  capacity: ${RATE_LIMIT_CAPACITY:10}
+  refill-rate: ${RATE_LIMIT_REFILL_RATE:1}
 
 # Redis connection logger active
